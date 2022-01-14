@@ -24,9 +24,9 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 93.75%;
         }
 
-        /* @media (max-width: 720px){
+        @media (max-width: 855px){
             font-size: 87.5%;
-        } */
+        }
     }
 
     body {
@@ -52,8 +52,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1120px;
         margin: 0 auto;
 
-        @media (max-width:1139px){
-        
+        @media (max-width:1139px){        
             max-width: 90%;
         }        
         

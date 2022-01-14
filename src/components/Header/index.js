@@ -1,21 +1,15 @@
-import { Container, Content } from "./styles"
+import { Burger } from "./Nav/Burger/Burger";
+import { Container, Nav } from "./styles"
 
 export function Header() {
     return (
         <Container>
-            <Content>
-                <h1>Healthy Food</h1>
-                <ul>
-                    <li>HEALTHY RECIPES</li>
-                    <li>BLOG</li>
-                    <li>JOIN</li>
-                    <li>
-                        <button type="button">
-                            REGISTER
-                        </button>
-                    </li>
-                </ul>
-            </Content>
+            <Nav>
+                <div className="logo">
+                    <h1>Healthy Food</h1>
+                </div>
+                <Burger /> 
+            </Nav>
 
         </Container>
     );
