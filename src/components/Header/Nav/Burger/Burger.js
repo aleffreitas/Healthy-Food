@@ -12,6 +12,7 @@ export function Burger() {
                 <div></div>
                 <div></div>
                 <div></div>
+                
             </StyledBurger>
             <RightNav open={open}/>
         </>

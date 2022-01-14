@@ -4,8 +4,8 @@ export const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    top: 1rem;
-    right: 1.2rem;    
+    top: 1.5rem;
+    right: 1.5rem;    
     z-index: 20;
     display: none;
 
@@ -21,6 +21,7 @@ export const StyledBurger = styled.div`
         background: ${({open}) => open ? 'var(--white)' : 'var(--white)'};
         border-radius: 0.8rem;
         transform-origin: 1px;
+        transition: all 0.3s linear;
 
         &:nth-child(1){
             transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};

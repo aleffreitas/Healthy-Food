@@ -66,12 +66,13 @@ export const Container = styled.section`
             display: flex;
             align-items: center;
             margin-top: 2rem;
+            max-width: 380px;
 
             input{
             padding: 0.8rem 1rem;
             border-radius: 0.3rem;
             border: 1px solid var(--purple);
-            width: 20rem;
+            width: 85%;
             }
         }
 
@@ -107,9 +108,9 @@ export const Container = styled.section`
         @media (max-width: 820px){
             transition: .3s;
             padding: 1rem;
-            border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(50px);
+            border-radius: 0.3rem;
+            background: rgba(255, 255, 255, 0.9);
+            /* backdrop-filter: blur(50px); */ // Propriedade sobrepõe o menu mobile, ainda sem solução para resolver.
             -webkit-backdrop-filter: blur(50px);
 
         }

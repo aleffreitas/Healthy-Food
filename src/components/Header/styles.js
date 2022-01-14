@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-export const Container = styled.header`    
+export const Container = styled.header` 
+    @media (max-width:295px) {
+        width: 60%;
+        padding-top: 1rem;
+        transition: .3s;
+    }
+
     background: transparent;
     position: fixed;
     width: 100%;
 
 `
 export const Nav = styled.nav`
+
+    
 
     @media (max-width: 805px ){
        h1{            
