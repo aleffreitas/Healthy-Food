@@ -11,7 +11,7 @@ export const Container = styled.section`
 
     p{
         margin-top: 1rem;
-        line-height: 1rem;
+        line-height: 0.7rem;
         color: var(--gray-150);
     }
 
@@ -27,7 +27,7 @@ export const Container = styled.section`
 
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 449px) {
         p{
             line-height: 1.2rem;
         }

@@ -13,10 +13,6 @@ export const Content = styled.div`
         text-align: left;    
         padding: 0 0.8rem;
 
-        @media (max-width: 425px) {
-            
-        }
-
         @media (max-width: 840px) {
             max-width: 315px;
         }        
@@ -33,7 +29,6 @@ export const Content = styled.div`
             background: var(--green);
             border: none;
             border-radius: 0.3rem;
-
             transition: filter 0.2s;
 
             &:hover{
@@ -49,6 +44,7 @@ export const Content = styled.div`
     @media (max-width: 425px) {
         display: block;
         border-radius: 1rem;
+        transition: 0.3s;
 
         img{
             width: 100%;
@@ -61,9 +57,6 @@ export const Content = styled.div`
 
             button{
                 font-size: 1.2rem;
-            }
-
-            button{
                 width: 60%;
             }
         }
