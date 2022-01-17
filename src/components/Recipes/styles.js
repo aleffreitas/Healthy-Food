@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     height: 100vh;
-    padding: 8rem 0;
+    margin-top: 8rem;
     text-align: center;    
 
     h1{
