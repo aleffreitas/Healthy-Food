@@ -1,6 +1,4 @@
-import imgComida1 from '../../../assets/comida_1.svg';
 import { Content } from './styles';
-
 
 export function Card(props) {
     return (

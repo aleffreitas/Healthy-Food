@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
     height: 100vh;
-    margin-top: 8rem;
-    text-align: center;
-
-    
+    padding: 8rem 0;
+    text-align: center;    
 
     h1{
         font-size: 2rem;

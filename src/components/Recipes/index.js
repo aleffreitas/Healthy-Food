@@ -17,10 +17,8 @@ export function Recipes() {
                 <Card title="Broccoli Salad with Bacon" image={imgComida1}/>
                 <Card title="Classic Beef Burgers" image={imgComida2}/>
                 <Card title="Classic Potato Salad" image={imgComida3}/>
-                <Card title="Cherry Cobbler on the Grill" image={imgComida4}/>
-                
-            </div>
-            
+                <Card title="Cherry Cobbler on the Grill" image={imgComida4}/>                
+            </div>            
         </Container>
     );
 }

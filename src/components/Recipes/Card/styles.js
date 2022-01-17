@@ -6,7 +6,6 @@ export const Content = styled.div`
     align-items: center;
     box-shadow: 0 15px 20px rgba(29, 22, 77, 0.08);
     border-radius: 0.5rem;    
-    
 
     .description{
 
@@ -20,9 +19,7 @@ export const Content = styled.div`
 
         @media (max-width: 840px) {
             max-width: 315px;
-        }
-
-        
+        }        
 
         h2{
             font-size: 1.5rem;
@@ -63,14 +60,12 @@ export const Content = styled.div`
             text-align: center;
 
             button{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             button{
                 width: 60%;
             }
         }
-    }
-
-    
+    }    
 `;
