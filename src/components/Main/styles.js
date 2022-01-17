@@ -7,7 +7,6 @@ export const Description = styled.div`
     background-size: contain;
     background-position: center right;  
     transition: 0.3s;
-    width: 100%;
     padding: 100px 0;
 
     @media (max-width: 590px){
@@ -18,12 +17,6 @@ export const Description = styled.div`
         padding: 90px 0;
 
     }
-    /* @media (max-width: 768px){
-        padding: 55px 0;
-
-    } */
-
-    
     
     @media (min-width: 1140px ) and (max-width: 1699px){
         padding: 180px 0;
@@ -45,7 +38,6 @@ export const Description = styled.div`
 `
 
 export const Container = styled.section`
-
           
     
     .description{
