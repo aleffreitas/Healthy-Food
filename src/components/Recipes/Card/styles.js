@@ -1,27 +1,34 @@
 import styled from "styled-components";
 
-export const Content = styled.div`
+export const Content = styled.div`    
     
     display: flex;
     align-items: center;
-    gap: 2.5rem;    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-
-    .image{
-        
-    }
+    box-shadow: 0 15px 20px rgba(29, 22, 77, 0.08);
+    border-radius: 0.5rem;    
+    
 
     .description{
 
-        max-width: 200px;
-        text-align: left;
+        max-width: 250px;
+        text-align: left;    
+        padding: 0 0.8rem;
+
+        @media (max-width: 425px) {
+            
+        }
+
+        @media (max-width: 840px) {
+            max-width: 315px;
+        }
+
+        
 
         h2{
             font-size: 1.5rem;
             line-height: 2rem;
         }
-
+        
         button{
             margin-top: 1rem;
             padding: 1rem;
@@ -34,6 +41,33 @@ export const Content = styled.div`
 
             &:hover{
                 filter: brightness(0.9);
+            }
+        }
+    }
+
+    @media (max-width: 840px){
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        display: block;
+        border-radius: 1rem;
+
+        img{
+            width: 100%;
+            border-radius: 1rem ;
+        }
+
+        .description{
+            padding: 1.5rem 1rem;
+            text-align: center;
+
+            button{
+                font-size: 1.5rem;
+            }
+
+            button{
+                width: 60%;
             }
         }
     }
