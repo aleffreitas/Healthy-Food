@@ -60,6 +60,47 @@ export const GlobalStyle = createGlobalStyle`
         
     }
 
+    .slick-next{
+        right: -25px;
+
+        &.slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover{
+            color: transparent;
+            outline: none;
+            background: transparent;
+        }
+    }
+    
+    .slick-next, .slick-prev{
+        padding: 25px;
+        width: 2vw;
+        height: 2vw;
+        cursor: pointer;
+        border: none;
+        border-radius: 5vw;
+        background-color: #fff;
+        z-index: 99!important;
+        box-shadow: 0 0 20px 5px rgb(35 35 35 / 50%);
+        top: 65%;
+
+        &:hover{
+            background-color:#fff;
+        }
+
+        img{
+            width: 100%;
+    height: 220px;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 10px;
+        }
+    }
+
+    }
+
     [disabled] {
         opacity: 0.6;
         cursor: not-allowed;

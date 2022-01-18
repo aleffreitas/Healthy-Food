@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import imgMain from "../../assets/Illustration.svg";
+import imgMain from "assets/Illustration.svg";
 
 
 export const Description = styled.div`  

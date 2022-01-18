@@ -1,10 +1,10 @@
 import { Card } from "./Card";
 import { Container } from "./styles";
 
-import imgComida1 from '../../assets/comida_1.svg';
-import imgComida2 from '../../assets/comida_2.svg';
-import imgComida3 from '../../assets/comida_3.svg';
-import imgComida4 from '../../assets/comida_4.svg';
+import imgComida1 from 'assets/comida_1.svg';
+import imgComida2 from 'assets/comida_2.svg';
+import imgComida3 from 'assets/comida_3.svg';
+import imgComida4 from 'assets/comida_4.svg';
 
 export function Recipes() {
     return (

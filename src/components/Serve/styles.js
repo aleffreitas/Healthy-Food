@@ -1,8 +1,6 @@
-import imgServices from '../../assets/bloco_services.svg';
+import imgServices from 'assets/bloco_services.svg';
 
 import styled from "styled-components";
-
-
 
 export const Services = styled.div`
     background: url(${imgServices}) no-repeat;
