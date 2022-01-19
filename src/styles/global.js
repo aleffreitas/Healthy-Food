@@ -59,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
         }        
         
     }
-    
+
     .slick-slider{
         &:after{
         background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 100%);
@@ -70,36 +70,19 @@ export const GlobalStyle = createGlobalStyle`
   position: absolute;
   right: 0;
   /* top: 0; */
-  width: 40%;
+  width: 60%;
     }
-
-
-
-    .slick-next {
-        margin-right: 27%;
-    }
-    .slick-prev {
-        margin-left: 10%;
-    }
-
-    /* .slick-track{
-        width: 1420px !important;
-        margin-right: 0;
-    } */
-
-    .slider .variable-width .slick-initialized{
-        /* width: 100vw !important; */
-    }
+        
     
     .slick-next, .slick-prev{
-        padding: 7px;
+        padding: 10px;
         width: 3vw;
         height: 3vw;
         cursor: pointer;
         border: none;
         border-radius: 5vw;
         background-color: #fff;
-        z-index: 99!important;
+        z-index: 99 !important;
         box-shadow: 0 0 15px 30px rgba(64, 152, 241, 0.08);
         top: 62%;
 
@@ -108,13 +91,14 @@ export const GlobalStyle = createGlobalStyle`
         }       
     }
 
-    .slick-list{
-        max-width: 90%;
-        margin: 0 auto;
+    .slick-next {
+        margin-right: 40%;
     }
+
+    
 
     [disabled] {
         opacity: 0.6;
         cursor: not-allowed;
     }
-`
+`;

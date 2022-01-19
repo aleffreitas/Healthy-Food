@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
+export const Read = styled.div`
+    overflow: hidden;
+`;
+
 export const Container = styled.section`
     margin-top: 3.5rem;
     text-align: center;
-    max-width: 1600px;
-    overflow: hidden; 
 
     h1{
         font-size: 2rem;
@@ -15,4 +17,9 @@ export const Container = styled.section`
         line-height: 0.7rem;
         color: var(--gray-150);
     }
+    
+    .cardsContainer{
+        width: 2000px;
+    }
 `;
+

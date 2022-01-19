@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { Card, Container, Content } from './styles';
+import { Card } from './styles';
 
 import imgBloco1 from 'assets/bloco_image_1.svg';
 import imgBloco2 from 'assets/bloco_image_2.svg';
@@ -40,7 +40,7 @@ export function Cards() {
         speed: 500,
         slidesToShow: 3,
         rows: 1,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
 
         variableWidth: true,
 
@@ -51,8 +51,8 @@ export function Cards() {
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 infinite: true,
                 dots: true
               }
@@ -76,7 +76,7 @@ export function Cards() {
     };
 
     return (
-        <Slider {...settings} style={{width: "2000px"}} >
+        <Slider {...settings}>
             {[1, 2, 3, 4].map((item, index) => {
                 return (
                         <Card key={index}>
