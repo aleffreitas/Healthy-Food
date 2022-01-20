@@ -102,8 +102,6 @@ export const Container = styled.section`
             padding: 1rem;
             border-radius: 0.3rem;
             background: rgba(255, 255, 255, 0.9);
-            /* backdrop-filter: blur(50px); */ // Propriedade sobrepõe o menu mobile, ainda sem solução para resolver.
-            -webkit-backdrop-filter: blur(50px);
 
         }
         
