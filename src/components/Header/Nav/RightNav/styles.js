@@ -47,6 +47,8 @@ export const Ul = styled.ul`
     @media (max-width: 300px){
         width: 100%;
     }
-    
+`;
 
-`
+export const Container = styled.form`
+
+`;

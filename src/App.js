@@ -7,9 +7,7 @@ import { Recipes } from "./components/Recipes";
 import { Serve } from "./components/Serve";
 import { GlobalStyle } from "./styles/global";
 
-export function App() {
-
-  
+export function App() { 
 
   return (
     <>
