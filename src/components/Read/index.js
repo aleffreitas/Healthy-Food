@@ -11,8 +11,8 @@ export function Reader() {
             <p>Vokalia and Consonantia, there live the blind texts.</p>   
                     
             <div className="cardsContainer">
-        <Cards/>
-        </div>
+                <Cards/>
+            </div>
         </Container>
         
         

@@ -16,10 +16,16 @@ export const Container = styled.section`
         margin-top: 1rem;
         line-height: 0.7rem;
         color: var(--gray-150);
+
+        @media (max-width: 450px) {
+            line-height: 1.2rem;
+        }
     }
     
     .cardsContainer{
-        width: 2000px;
+
+        width: 1300px;
+
     }
 `;
 

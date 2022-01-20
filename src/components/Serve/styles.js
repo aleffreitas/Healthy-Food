@@ -13,7 +13,7 @@ export const Services = styled.div`
     display: flex;
     align-items: center;
 
-    height: 100vh;
+    /* height: 100vh; */
 
     @media (max-width: 590px){
         background-size: cover;
@@ -79,7 +79,7 @@ export const Container = styled.section`
             }
         }
 
-        @media (max-width: 930px){
+        @media (max-width: 1000px){
             transition: .3s;
             padding: 1rem;
             border-radius: 0.3rem;

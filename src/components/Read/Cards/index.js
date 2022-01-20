@@ -36,50 +36,24 @@ export function Cards() {
     const settings = {
         className: "slider variable-width",
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         rows: 1,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
 
         variableWidth: true,
 
         nextArrow: <SlickArrowLeft />,
         prevArrow: <SlickArrowRight />,
-
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
+        
     };
 
     return (
         <Slider {...settings}>
             {[1, 2, 3, 4].map((item, index) => {
                 return (
-                        <Card key={index}>
+                        <Card key={index} >
                         <img src={blocs[index]} className="imgBloc" />
                         <div className="description">
                             <div className="titles">
