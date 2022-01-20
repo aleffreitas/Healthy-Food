@@ -8,7 +8,9 @@ import imgComida4 from 'assets/comida_4.svg';
 
 export function Recipes() {
     return (
-        <Container>
+        <>
+        <div id="healthyRecipes"></div>
+        <Container >
             <h1>Our Best Recipes</h1>
             <p>Far far way, behind the word mountains, far from the countries</p>
             <p>Vokalia and Consonantia, there live the blind texts.</p>
@@ -20,5 +22,6 @@ export function Recipes() {
                 <Card title="Cherry Cobbler on the Grill" image={imgComida4}/>                
             </div>            
         </Container>
+        </>
     );
 }

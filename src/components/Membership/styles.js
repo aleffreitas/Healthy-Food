@@ -8,6 +8,7 @@ export const Description = styled.div`
     background-position: center right;  
     transition: 0.3s;
     padding: 100px 0;
+    margin-top: 5rem;
 
     @media (max-width: 590px){
         background-size: cover;

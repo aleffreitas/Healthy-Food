@@ -2,15 +2,10 @@ import styled from "styled-components";
 
 export const Read = styled.div`
     overflow: hidden;
-
-    .openMenu{
-        position: relative;
-        z-index: -1;
-    }
 `;
 
 export const Container = styled.section`
-    margin-top: 3.5rem;
+    margin-top: 6rem;
     text-align: center;
 
     h1{

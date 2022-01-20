@@ -5,7 +5,7 @@ import { StyledBurger } from "./styles";
 export function Burger() {
 
     const [open, setOpen] = useState(false);
-
+    
     return (
         <>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -14,7 +14,7 @@ export function Burger() {
                 <div></div>
                 
             </StyledBurger>
-            <RightNav open={open}/>
+            <RightNav open={open} setOpen={setOpen}/>
         </>
     );
 }

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const Card = styled.div`
-    margin: 3rem 0 10rem 0;
+    margin: 3rem 0 5rem 0rem;
     border-radius: 0.3rem;
-    box-shadow: 0 0 15px 15px rgba(29, 22, 77, 0.08);
+    box-shadow: 0 15px 15px 0 rgba(29, 22, 77, 0.08);
 
     transition: .3s;
     

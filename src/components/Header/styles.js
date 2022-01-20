@@ -1,35 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.header` 
-    @media (max-width:295px) {
-        width: 60%;
-        padding-top: 1rem;
-        transition: .3s;
-    }
+        
 
-    background: transparent;
+    height: ${(props) => (props.sticky ? "1" : "0")};
+    transition: ${(props) => (props.sticky ? ".4s ease-in-out" : "")};
+    background: ${(props) => (props.sticky ? "var(--green)" : "transparent")};
+    
     position: fixed;
     width: 100%;
+    z-index: 2;   
 
 `
-export const Nav = styled.nav`
-
-    
-
-    @media (max-width: 805px ){
-       h1{            
-            transition: .3s;
-            padding: 0.8rem;
-            border-radius: 0.3rem;
-            background: white;
-        }
-    }   
-
-    @media (max-width: 1140px ){
-        max-width: 90%;
-    }   
-
-    
+export const Nav = styled.nav`   
 
     max-width: 1120px;
     height: 5rem;
@@ -40,9 +23,18 @@ export const Nav = styled.nav`
     align-items: center;
     justify-content: space-between;
 
-    h1{
+    h1{ 
+        background: white;
         color: var(--green);
         font-size: 1.8rem;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+
+        @media (max-width: 295px ){           
+            font-size: 1.2rem;
+            padding: 0.8rem;
+
+        }
     }    
 
     button {
@@ -59,6 +51,10 @@ export const Nav = styled.nav`
         &:hover{
             filter: brightness(0.9);
         }
+    }
+
+    @media (max-width: 1140px ){
+        max-width: 90%;
     }
 
 `

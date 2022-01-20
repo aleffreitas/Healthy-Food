@@ -11,6 +11,13 @@ export const Ul = styled.ul`
         color: var(--white);
         font-weight: bold;
         font-size: 0.8rem;
+        cursor: pointer;
+
+        transition: .2s;
+
+        &:hover{
+            filter: brightness(0.9);
+        }
     }
 
     @media (max-width: 768px) {

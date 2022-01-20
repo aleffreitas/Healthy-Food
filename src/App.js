@@ -1,3 +1,4 @@
+import { Footer } from "components/Footer";
 import { Membership } from "components/Membership";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
@@ -15,6 +16,7 @@ export function App() {
       <Serve />
       <Reader />
       <Membership />
+      <Footer />
 
       <GlobalStyle />
     </>

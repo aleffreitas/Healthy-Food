@@ -76,7 +76,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         @media (max-width: 900px) {
-            max-width: 300px;
+            max-width: 280px;
             margin-right: 1rem;
 
         }
@@ -94,20 +94,20 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    .slick-slider{
+    .slick-slider{        
+        
         &:after{
             background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 100%);
             bottom: 0;
             content: "";
             height: 100%;
-            /* left: 0; */
             position: absolute;
             right: 0;
-            /* top: 0; */
             width: 5%;
             margin-right: -2px;
 
             transition: .3s;
+            
 
             @media (max-width: 1400px){
                 background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 50%);
@@ -139,16 +139,12 @@ export const GlobalStyle = createGlobalStyle`
                 width: 50%;
             }
 
-            @media (max-width: 980px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 40%);
-                width: 55%;
+            @media (max-width: 768px){
+                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 20%);
+                width: 5%;
             }
         }
             
-    }
-
-    .slick-slider{
-        /* z-index: 1; */
     }
         
     
@@ -158,8 +154,9 @@ export const GlobalStyle = createGlobalStyle`
         border: none;
         border-radius: 5vw;
         background-color: #fff;
-        z-index: 99 !important;
+        z-index: 1 !important;
         box-shadow: 0 0 15px 30px rgba(64, 152, 241, 0.08);
+        top: 55%;
 
         &:hover{
             background-color:#fff;
@@ -171,7 +168,6 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 768px){
 
-            top: 64%;
             &.slick-next{
                 margin-right: 48.5%;
             }
@@ -182,18 +178,13 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 855px){
 
-            top: 63%;
             &.slick-next{
                 margin-right: 48.5%;
             }
-            padding: 10px;
-            width: 5vw;
-            height: 5vw;
         }
 
         @media (min-width: 900px){
             
-            top: 63%;
             &.slick-next{
                 margin-right: 45%;
             }            
@@ -201,7 +192,6 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 925px){
             
-            top: 63%;
             &.slick-next{
                 margin-right: 38%;
             }            
@@ -209,7 +199,6 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 980px){
             
-            top: 63%;
             &.slick-next{
                 margin-right: 34%;
             }            
@@ -217,7 +206,6 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 1025px){
             
-            top: 65%;
             &.slick-next{
                 margin-right: 36.5%;
             }            
@@ -225,7 +213,6 @@ export const GlobalStyle = createGlobalStyle`
 
         @media (min-width: 1080px){
             
-            top: 64%;
             &.slick-next{
                 margin-right: 30%;
             }            

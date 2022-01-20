@@ -4,6 +4,8 @@ export function Membership() {
 
 
     return (
+        <>
+        <div  id="join"></div>
         <Description>
             <Container>
                 <div className="description">
@@ -18,5 +20,6 @@ export function Membership() {
             </Container>
 
         </Description>
+        </>
     );
 }
