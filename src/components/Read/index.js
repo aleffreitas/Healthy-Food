@@ -3,7 +3,7 @@ import { Container, Read } from "./styles";
 
 export function Reader() {
     return (
-        <Read>
+        <Read className="openMenu">
         
         <Container>
             <h1>Read Our Blog</h1>

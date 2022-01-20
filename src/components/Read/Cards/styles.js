@@ -2,24 +2,14 @@ import styled from "styled-components";
 
 
 export const Card = styled.div`
-    /* max-width: 340px; */
-    margin-top: 3rem;
-    /* margin-right: 2rem; */
+    margin: 3rem 0 10rem 0;
     border-radius: 0.3rem;
     box-shadow: 0 0 15px 15px rgba(29, 22, 77, 0.08);
 
     transition: .3s;
-
-    /* @media (max-width: 580px){
-        max-width: 230px;
-        height: 380px;        
-        margin-right: 0.5rem;
-    } */
-
     
     .imgBloc{
         width: 100%;
-
     }    
 
     .description{
@@ -43,9 +33,5 @@ export const Card = styled.div`
         gap: 1rem;
         margin-top: 1rem;
         bottom: 0;
-    }
-
-    
-
-    
+    }    
 `;

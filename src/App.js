@@ -1,3 +1,4 @@
+import { Membership } from "components/Membership";
 import { Header } from "./components/Header";
 import { Main } from "./components/Main";
 import { Reader } from "./components/Read";
@@ -13,6 +14,7 @@ export function App() {
       <Recipes />
       <Serve />
       <Reader />
+      <Membership />
 
       <GlobalStyle />
     </>

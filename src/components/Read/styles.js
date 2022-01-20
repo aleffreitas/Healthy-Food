@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Read = styled.div`
     overflow: hidden;
+
+    .openMenu{
+        position: relative;
+        z-index: -1;
+    }
 `;
 
 export const Container = styled.section`

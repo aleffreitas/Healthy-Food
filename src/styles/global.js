@@ -237,6 +237,12 @@ export const GlobalStyle = createGlobalStyle`
             }            
         }
 
+        @media (min-width: 1138px) and (max-width: 1280px){
+            &.slick-prev{
+                margin-left: 2%;
+            }            
+        }
+
         @media (min-width: 1240px){
             &.slick-next{
                 margin-right: 15%;
