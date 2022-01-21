@@ -144,4 +144,4 @@ export const Container = styled.section`
         max-width: 80%;
     }
     
-`
+`;

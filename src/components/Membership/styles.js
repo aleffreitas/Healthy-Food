@@ -31,16 +31,24 @@ export const Description = styled.div`
     }
     
     @media (min-width: 2000px){
-        padding: 330px 0;
+        padding: 410px 0;
+
+    }
+
+    @media (min-width: 2285px){
+        padding: 520px 0;
+
+    }
+
+    @media (min-width: 2400px){
+        padding: 550px 0;
 
     }
 
     
 `
 
-export const Container = styled.section`
-          
-    
+export const Container = styled.section`    
     
     .description{
 
@@ -89,6 +97,30 @@ export const Container = styled.section`
                 filter: brightness(0.9);
             }
         }
+
+        @media (min-width: 2000px){
+            max-width: 700px;
+            
+            div{
+                max-width: 700px;
+
+                input{
+                padding: 1.9rem 1rem;
+                font-size: 1.5rem;
+                }
+
+                button{
+                padding: 1.5rem 4rem;            
+                font-size: 2.2rem;
+                }
+            }
+
+            h1{
+                font-size: 3.5rem;
+                line-height: 5rem;
+            }
+
+        }
         
         @media (max-width: 980px){
             max-width: 290px; 
@@ -104,9 +136,6 @@ export const Container = styled.section`
             padding: 1rem;
             border-radius: 0.3rem;
             background: rgba(255, 255, 255, 0.9);
-            /* backdrop-filter: blur(50px); */ // Propriedade sobrepõe o menu mobile, ainda sem solução para resolver.
-            -webkit-backdrop-filter: blur(50px);
-
         }
 
         @media (max-width: 320px){
@@ -118,5 +147,9 @@ export const Container = styled.section`
         }
         
     }
+
+    @media (min-width: 2000px) {
+        max-width: 80%;
+    }
     
-`
+`;
