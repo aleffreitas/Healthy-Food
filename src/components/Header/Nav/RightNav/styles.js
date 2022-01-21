@@ -21,6 +21,7 @@ export const Ul = styled.ul`
     }
 
     @media (max-width: 768px) {
+        box-shadow: ${({ open }) => open ? '0 800px 0 800px rgba(0, 0, 0, 0.5)' : ''};
         flex-flow: column nowrap;
         background: var(--white);
         position: fixed;

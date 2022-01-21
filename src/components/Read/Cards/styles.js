@@ -39,15 +39,26 @@ export const Card = styled.div`
 
         .description{
             text-align: left;
-            padding: 1.5rem;
+            padding: 3rem 2rem;
+
+            h2{
+                font-size: 2.5rem;
+                height: 10rem;
+            }
         }
 
         .people{
-            display: flex;
-            align-items: center;
             gap: 1rem;
             margin-top: 1rem;
             bottom: 0;
+
+            img{
+                width: 100px;
+            }
+
+            span{
+                font-size: 2rem;
+            }
         }    
     }
 `;

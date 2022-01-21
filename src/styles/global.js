@@ -119,29 +119,26 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 1024px) {
             max-width: 320px;
             margin-right: 1rem;
-
         }
 
         @media (max-width: 900px) {
             max-width: 280px;
-            margin-right: 1rem;
-
         }
 
         @media (max-width: 768px) {
             max-width: 250px;
-            margin-right: 1rem;
-
         }
 
         @media (max-width: 600px) {
             max-width: 230px;
-            margin-right: 1rem;
-
         }
 
         @media (min-width: 2000px){
-            max-width: 600px;
+            max-width: 500px;
+        }
+
+        @media (min-width: 2200px){
+            max-width: 560px;
         }
     }
 
@@ -154,53 +151,19 @@ export const GlobalStyle = createGlobalStyle`
             height: 100%;
             position: absolute;
             right: 0;
-            width: 5%;
+            width: 7%;
             margin-right: -2px;
 
             transition: .3s;
-            
-
-            @media (max-width: 1400px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 50%);
-                width: 10%;
-            }
-            
-            @media (max-width: 1300px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 50%);
-                width: 15%;
-            }
-            
-            @media (max-width: 1240px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 50%);
-                width: 20%;
-            } 
-
-            @media (max-width: 1170px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 40%);
-                width: 30%;
-            }
-            
-            @media (max-width: 1080px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 40%);
-                width: 40%;
-            }
-            
-            @media (max-width: 980px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 40%);
-                width: 50%;
-            }
-
-            @media (max-width: 768px){
-                background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 1) 20%);
-                width: 5%;
-            }
         }
             
     }
         
     
     .slick-next, .slick-prev{
-        height: 3vw;
+        padding: 10px;
+        width: 4vw;
+        height: 4vw;
         cursor: pointer;
         border: none;
         border-radius: 5vw;
@@ -217,89 +180,20 @@ export const GlobalStyle = createGlobalStyle`
             margin-right: 6%;
         }
 
-        @media (min-width: 768px){
-
-            &.slick-next{
-                margin-right: 48.5%;
-            }
-            padding: 10px;
-            width: 5vw;
-            height: 5vw;
-            }
-
-        @media (min-width: 855px){
-
-            &.slick-next{
-                margin-right: 48.5%;
-            }
+        @media (max-width: 1024px) {
+            top: 54%;
         }
 
-        @media (min-width: 900px){
-            
-            &.slick-next{
-                margin-right: 45%;
-            }            
+        @media (max-width: 1140px) {
+            padding: 7px;
+            width: 4vw;
+            height: 4vw;
         }
-
-        @media (min-width: 925px){
-            
-            &.slick-next{
-                margin-right: 38%;
-            }            
-        }
-
-        @media (min-width: 980px){
-            
-            &.slick-next{
-                margin-right: 34%;
-            }            
-        }
-
-        @media (min-width: 1025px){
-            
-            &.slick-next{
-                margin-right: 36.5%;
-            }            
-        }
-
-        @media (min-width: 1080px){
-            
-            &.slick-next{
-                margin-right: 30%;
-            }            
-        }
-
-        @media (min-width: 1170px){
-            &.slick-next{
-                margin-right: 20%;
-            }            
-        }
-
-        @media (min-width: 1138px) and (max-width: 1280px){
-            &.slick-prev{
-                margin-left: 2%;
-            }            
-        }
-
-        @media (min-width: 1240px){
-            &.slick-next{
-                margin-right: 15%;
-            }            
-        }
-
-        @media (min-width: 1300px){
-            &.slick-next{
-                margin-right: 10%;
-            }            
-        }
-
-        @media (min-width: 1400px){
-            &.slick-next{
-                margin-right: 6%;
-            }           
-            padding: 10px;
-            width: 3vw;
-            height: 3vw;
+        @media (min-width: 2000px) {
+            top: 48%;
+            padding: 15px;
+            width: 4vw;
+            height: 4vw;
         }
         
     }

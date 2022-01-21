@@ -38,14 +38,21 @@ export function Cards() {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         rows: 1,
         slidesToScroll: 1,
-
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 524,
+                settings: {
+                slidesToShow: 1,
+            }
+            }
+        ],
 
         nextArrow: <SlickArrowLeft />,
-        prevArrow: <SlickArrowRight />,
+        prevArrow: <SlickArrowRight />,        
         
     };
 

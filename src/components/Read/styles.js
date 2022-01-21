@@ -5,6 +5,8 @@ export const Read = styled.div`
 `;
 
 export const Container = styled.section`
+
+    max-width: 83%;
     margin-top: 6rem;
     text-align: center;
 
@@ -23,14 +25,13 @@ export const Container = styled.section`
     }
     
     .cardsContainer{
-        width: 1300px;
-
+        width: 112%;
     }
+    
 
     @media (min-width: 2000px) {
         max-width: 80%;
-        margin-top: 6rem;
-        text-align: center;
+        margin-top: 12rem;
 
         h1{
             font-size: 3.5rem;
@@ -40,11 +41,7 @@ export const Container = styled.section`
             font-size: 1.8rem;
             line-height: 2.2rem;            
         }
-        
-        .cardsContainer{
-            width: 1800px;
-
-        }
     }
+    
 `;
 
