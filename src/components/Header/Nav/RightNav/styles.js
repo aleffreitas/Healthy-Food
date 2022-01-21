@@ -22,7 +22,7 @@ export const Ul = styled.ul`
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
-        background: var(--green);
+        background: var(--white);
         position: fixed;
         top: 0;
         right: 0;
@@ -35,11 +35,15 @@ export const Ul = styled.ul`
         padding-top: 7rem;
         
         li{
-            font-size: 1.2rem;
+            font-size: 1.2rem;            
+            color: var(--green);
 
             button{
                 width: 200px;
                 font-size: 1.2rem;
+                color: var(--white);
+                background-color: var(--green);
+
             }
         }
     }
