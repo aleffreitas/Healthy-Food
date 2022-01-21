@@ -4,17 +4,16 @@ import Modal from 'react-modal';
 import { useState } from "react";
 import api from 'services/api';
 import closeImg from 'assets/close.svg';
-// import { useHistory } from 'react-router-dom';
 
+import { toast } from 'react-toastify';
 
 Modal.setAppElement('#root');
 
 
-export function RightNav({ open, setOpen }) {
+export function RightNav({ open, setOpen}) {
 
     const [isNewModalOpen, setIsNewModalOpen] = useState(false);
 
-    // const { goBack } = useHistory();
     const [cep, setCEP] = useState('');
     const [address, setAddress] = useState('');
     const [complement, setComplement] = useState('');
@@ -30,6 +29,7 @@ export function RightNav({ open, setOpen }) {
             setDistrict(response.data.bairro);
             setCity(response.data.localidade);
             setUF(response.data.uf);
+
         } catch (error) {
             setAddress('');
             setComplement('');
@@ -39,26 +39,50 @@ export function RightNav({ open, setOpen }) {
         }
     }
 
+    function clearInputs() {
+        setAddress('');
+        setComplement('');
+        setDistrict('');
+        setCity('');
+        setUF('');
+    }
+
+    function handleRegisterSucess() {
+        toast.success('User registered successfully');
+    }
+
+    function handleRegisterError() {        
+        toast.error('User not registered');
+    }
+
     function handleSubmit(event) {
         event.preventDefault();
 
-        const userRegister = {
-            name: event.target.elements.name.value,
-            birthday: event.target.elements.birthday.value,
-            CPF: event.target.elements.CPF.value,
-            CEP: event.target.elements.CEP.value,
-            address: event.target.elements.address.value,
-            number: event.target.elements.number.value,
-            complement: event.target.elements.complement.value,
-            district: event.target.elements.district.value,
-            city: event.target.elements.city.value,
-            UF: event.target.elements.UF.value
-        };
+        try{
+            const userRegister = {
+                name: event.target.elements.name.value,
+                birthday: event.target.elements.birthday.value,
+                CPF: event.target.elements.CPF.value,
+                CEP: event.target.elements.CEP.value,
+                address: event.target.elements.address.value,
+                number: event.target.elements.number.value,
+                complement: event.target.elements.complement.value,
+                district: event.target.elements.district.value,
+                city: event.target.elements.city.value,
+                UF: event.target.elements.UF.value
+            };
 
-        localStorage[`healthyFoodCommerce${userRegister.CPF}Registry`] = JSON.stringify(userRegister);
+            localStorage[`healthyFoodCommerce${userRegister.CPF}Registry`] = JSON.stringify(userRegister);
 
-        // goBack();
-    }
+            handleRegisterSucess();
+
+        } catch {
+            handleRegisterError();
+        }
+
+        handleCloseModalOpen();
+        clearInputs();        
+    }  
 
 
     function handleModalOpen() {
@@ -67,7 +91,7 @@ export function RightNav({ open, setOpen }) {
 
     function handleCloseModalOpen() {
         setIsNewModalOpen(false);
-    }
+    }   
 
     return (
         <Ul open={open}>
@@ -79,21 +103,21 @@ export function RightNav({ open, setOpen }) {
                     REGISTER
                 </button>
 
-
                 <Modal
                     isOpen={isNewModalOpen}
                     onRequestClose={handleCloseModalOpen}
                     overlayClassName="react-modal-overlay"
                     className="react-modal-content"
                 >
+                    
                     <button
                         type="button"
                         onClick={handleCloseModalOpen}
                         className="react-modal-close"
                     >
-                        <img src={closeImg} alt="Fechar Modal"/>
+                        <img src={closeImg} alt="Fechar Modal" />
                     </button>
-                    <Container className='form' action='/' onSubmit={handleSubmit}>
+                    <Container className='form' onSubmit={handleSubmit}>
                         <h2>Register</h2>
                         <input id='name'
                             type='text'
@@ -143,7 +167,7 @@ export function RightNav({ open, setOpen }) {
                             value={address}
                             required={true}
                             onChange={(e) => setAddress(e.target.value)}
-                        />                        
+                        />
                         <input
                             id='complement'
                             type='text'

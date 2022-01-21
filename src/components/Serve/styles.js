@@ -83,9 +83,31 @@ export const Container = styled.section`
             transition: .3s;
             padding: 1rem;
             border-radius: 0.3rem;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.95);            
+        }        
+    }
 
-            
+    @media (min-width: 2000px) {
+
+        max-width: 80%;
+
+        .services{
+            max-width: 700px;
+
+            h1{
+                font-size: 3.5rem;
+            }
+
+            p{
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+            }
+
+            button{
+                margin-top: 3rem;
+                padding: 2rem 2rem;
+                font-size: 2rem;
+            }
         }
     }
 `;

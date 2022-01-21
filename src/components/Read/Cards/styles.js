@@ -33,5 +33,21 @@ export const Card = styled.div`
         gap: 1rem;
         margin-top: 1rem;
         bottom: 0;
-    }    
+    }
+    
+    @media (min-width: 2000px){
+
+        .description{
+            text-align: left;
+            padding: 1.5rem;
+        }
+
+        .people{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            bottom: 0;
+        }    
+    }
 `;

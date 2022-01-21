@@ -18,7 +18,7 @@ export function Header({stick}) {
                 <div className="logo">
                     <h1>Healthy Food</h1>
                 </div>
-                <Burger /> 
+                <Burger/> 
             </Nav>
 
         </Container>

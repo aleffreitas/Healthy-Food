@@ -6,20 +6,20 @@ import { Reader } from "./components/Read";
 import { Recipes } from "./components/Recipes";
 import { Serve } from "./components/Serve";
 import { GlobalStyle } from "./styles/global";
+import { ToastContainer } from 'react-toastify';
 
-export function App() { 
+export function App() {
 
   return (
     <>
-      
-      <Header />
+      <Header/>
       <Main />
       <Recipes />
       <Serve />
       <Reader />
       <Membership />
       <Footer />
-
+      <ToastContainer />
       <GlobalStyle />
     </>
   );

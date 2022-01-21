@@ -11,9 +11,9 @@ export const Container = styled.header`
     width: 100%;
     z-index: 2;   
 
-`
-export const Nav = styled.nav`   
-
+`;
+export const Nav = styled.nav`
+    
     max-width: 1120px;
     height: 5rem;
     margin: 0 auto;
@@ -22,6 +22,8 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    transition: .3s;
 
     h1{ 
         background: white;
@@ -53,8 +55,31 @@ export const Nav = styled.nav`
         }
     }
 
-    @media (max-width: 1140px ){
-        max-width: 90%;
+    @media (min-width: 2000px ){
+        max-width: 80%;
+        height: 10rem;
+
+        h1{ 
+        font-size: 3rem;
+        padding: 1rem;
+        }
+
+        button {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        }
+
+        ul{
+            gap: 3rem;
+        }
+
+        li{
+            font-size: 1.6rem;
+        }
     }
 
-`
+
+    @media (max-width: 1140px ){
+        max-width: 90%;        
+    }
+`;

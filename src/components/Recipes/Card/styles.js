@@ -37,6 +37,24 @@ export const Content = styled.div`
         }
     }
 
+    @media (min-width: 2000px) {
+        .description{
+
+            max-width: 400px;
+            text-align: left;    
+            padding: 0 1rem;
+            h2{
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+            }
+
+            button{
+                font-size: 2rem;
+                padding: 1rem;
+            }
+        }         
+    }
+
     @media (max-width: 840px){
         margin-bottom: 2rem;
     }

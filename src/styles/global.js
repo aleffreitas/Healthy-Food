@@ -110,7 +110,7 @@ export const GlobalStyle = createGlobalStyle`
     .slick-slide, .slick-active, .slick-cloned{
         
         margin-right: 2rem;
-        transition: .3s;
+        transition: .3s;        
 
         @media (min-width: 1024px) {
             max-width: 360px;
@@ -138,6 +138,10 @@ export const GlobalStyle = createGlobalStyle`
             max-width: 230px;
             margin-right: 1rem;
 
+        }
+
+        @media (min-width: 2000px){
+            max-width: 600px;
         }
     }
 
