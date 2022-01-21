@@ -60,6 +60,53 @@ export const GlobalStyle = createGlobalStyle`
         
     }
 
+    .react-modal-overlay{
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .react-modal-content{
+
+        width: 100%;
+        max-width: 500px;
+
+        background-color: var(--white);
+        padding: 3rem;
+        position: relative;
+        border-radius: 0.25rem;
+
+        @media (max-width: 530px) {
+            width: 90%;
+            padding: 2rem;
+        }
+
+        @media (max-width: 372px) {
+            padding: 2rem 1rem;
+        }
+    }
+
+    .react-modal-close{
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+        transition: filter 0.2s;
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+
     .slick-slide, .slick-active, .slick-cloned{
         
         margin-right: 2rem;
@@ -262,5 +309,5 @@ export const GlobalStyle = createGlobalStyle`
     [disabled] {
         opacity: 0.6;
         cursor: not-allowed;
-    }
+    }   
 `;

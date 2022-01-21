@@ -2,7 +2,8 @@ import { Container, Ul } from "./styles";
 import { Link } from 'react-scroll';
 import Modal from 'react-modal';
 import { useState } from "react";
-import api from 'services/api'
+import api from 'services/api';
+import closeImg from 'assets/close.svg';
 // import { useHistory } from 'react-router-dom';
 
 
@@ -82,8 +83,17 @@ export function RightNav({ open, setOpen }) {
                 <Modal
                     isOpen={isNewModalOpen}
                     onRequestClose={handleCloseModalOpen}
+                    overlayClassName="react-modal-overlay"
+                    className="react-modal-content"
                 >
-                    <Container action='/' onSubmit={handleSubmit}>
+                    <button
+                        type="button"
+                        onClick={handleCloseModalOpen}
+                        className="react-modal-close"
+                    >
+                        <img src={closeImg} alt="Fechar Modal"/>
+                    </button>
+                    <Container className='form' action='/' onSubmit={handleSubmit}>
                         <h2>Register</h2>
                         <input id='name'
                             type='text'
@@ -119,14 +129,6 @@ export function RightNav({ open, setOpen }) {
                             onBlur={(e) => getAddress(cep)}
                         />
                         <input
-                            id='address'
-                            type='text'
-                            placeholder='Enter your address'
-                            value={address}
-                            required={true}
-                            onChange={(e) => setAddress(e.target.value)}
-                        />
-                        <input
                             id='number'
                             type='number'
                             placeholder='Number'
@@ -134,6 +136,14 @@ export function RightNav({ open, setOpen }) {
                             title='Must contain numbers only.'
                             required={true}
                         />
+                        <input
+                            id='address'
+                            type='text'
+                            placeholder='Enter your address'
+                            value={address}
+                            required={true}
+                            onChange={(e) => setAddress(e.target.value)}
+                        />                        
                         <input
                             id='complement'
                             type='text'
