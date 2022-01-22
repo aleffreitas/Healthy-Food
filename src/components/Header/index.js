@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Burger } from "./Nav/Burger/Burger";
 import { Container, Nav } from "./styles";
 
-export function Header({stick}) {
+export function Header({stick, openNewModal}) {
 
     const [scroll, setScroll] = useState(false);
 
@@ -18,7 +18,7 @@ export function Header({stick}) {
                 <div className="logo">
                     <h1>Healthy Food</h1>
                 </div>
-                <Burger/> 
+                <Burger openNewModal={openNewModal}/> 
             </Nav>
 
         </Container>
