@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Healthy-Food/static/css/main.6b27ddb4.css",
+    "main.js": "/Healthy-Food/static/js/main.7453226c.js",
+    "static/media/people_1.svg": "/Healthy-Food/static/media/people_1.70653443690b9a878670c11c88c3f93c.svg",
+    "static/media/bloco_image_1.svg": "/Healthy-Food/static/media/bloco_image_1.3d1e73baf7a4ef35638cdfcdd7f4fba8.svg",
+    "static/media/bloco_image_2.svg": "/Healthy-Food/static/media/bloco_image_2.0666490649a51b0b48f928bce814b447.svg",
+    "static/media/people_3.svg": "/Healthy-Food/static/media/people_3.b9f0c2429e599de9d7ed50e5ad3f0296.svg",
+    "static/media/people_4.svg": "/Healthy-Food/static/media/people_4.c2ced7774814293e8d32efb0a3f723db.svg",
+    "static/media/bloco_image_4.svg": "/Healthy-Food/static/media/bloco_image_4.c487138e23c76d9baecf5a63b1899b12.svg",
+    "static/media/bloco_image_3.svg": "/Healthy-Food/static/media/bloco_image_3.a1541a046282b7597152fc1dc87700b8.svg",
+    "static/media/comida_2.svg": "/Healthy-Food/static/media/comida_2.8ea0f4f70087cc2fb8796ff190894bc2.svg",
+    "static/media/comida_4.svg": "/Healthy-Food/static/media/comida_4.e0fb4f03e9d56a33b53580b0fa6256d8.svg",
+    "static/media/people_2.svg": "/Healthy-Food/static/media/people_2.e0681d4f7b1df535402daf6836f40f78.svg",
+    "static/media/comida_1.svg": "/Healthy-Food/static/media/comida_1.19b82af4cc11a517b61c8f1b0e9ca259.svg",
+    "static/media/comida_3.svg": "/Healthy-Food/static/media/comida_3.f59c52bd844108a20eea8c882957bf64.svg",
+    "static/media/bloco_services.svg": "/Healthy-Food/static/media/bloco_services.47777e24fd769f9f7df434b9681fde26.svg",
+    "static/media/Illustration.svg": "/Healthy-Food/static/media/Illustration.86603ce1e3f72e822cdd9297cc432807.svg",
+    "static/media/bloco_final_image.svg": "/Healthy-Food/static/media/bloco_final_image.f832b8d35aae1fc4b85474aaeed8cf3f.svg",
+    "static/media/slick.svg": "/Healthy-Food/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Healthy-Food/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Healthy-Food/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Healthy-Food/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/right-arrow.svg": "/Healthy-Food/static/media/right-arrow.8071583220b2a42c5ecfbee51b836041.svg",
+    "static/media/left-arrow.svg": "/Healthy-Food/static/media/left-arrow.7cdddc37b5a84cecc1f1e528bdd6270d.svg",
+    "index.html": "/Healthy-Food/index.html",
+    "static/media/close.svg": "/Healthy-Food/static/media/close.f62862c6571367515ce17c7b4e77a1fc.svg",
+    "main.6b27ddb4.css.map": "/Healthy-Food/static/css/main.6b27ddb4.css.map",
+    "main.7453226c.js.map": "/Healthy-Food/static/js/main.7453226c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b27ddb4.css",
+    "static/js/main.7453226c.js"
+  ]
+}
