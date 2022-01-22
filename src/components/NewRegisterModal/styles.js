@@ -68,6 +68,13 @@ export const Container = styled.form`
     }
 
     @media (min-width: 2000px) {
+
+        padding: 2rem;
+
+        label{
+            font-size: 2rem;
+        }
+
         h2{
             font-size: 4rem;
         }
@@ -75,7 +82,8 @@ export const Container = styled.form`
         input{
             font-weight: 400;
             font-size: 2rem;
-            padding: 3.5rem 1rem;
+            padding: 3rem 1rem;
+            margin-top: 1.2rem;
         }
 
         button[type="submit"]{

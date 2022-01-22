@@ -1,4 +1,4 @@
-import { Container, Ul } from "./styles";
+import { Container} from "./styles";
 import { toast } from 'react-toastify';
 import { useState } from "react";
 import Modal from 'react-modal';
@@ -35,7 +35,6 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
             setUF('');
         }
     }
-
     function clearInputs() {
         setAddress('');
         setComplement('');
