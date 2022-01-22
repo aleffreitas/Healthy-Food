@@ -29,6 +29,26 @@ export const Container = styled.div`
          
     }
 
+    @media (min-width: 1440px){
+        p{
+            font-size: 1.3rem;
+        }
+        
+        li{
+            font-size: 1.3rem;
+        }        
+    }
+
+    @media (min-width: 2000px){
+        p{
+            font-size: 1.5rem;
+        }
+        
+        li{
+            font-size: 1.5rem;
+        }        
+    }
+
     @media (max-width: 660px) {
 
         text-align: center;
@@ -46,8 +66,5 @@ export const Container = styled.div`
                     }
                 }
             }
-    }
-
-       
-    
+    }    
 `;

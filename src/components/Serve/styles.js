@@ -13,8 +13,6 @@ export const Services = styled.div`
     display: flex;
     align-items: center;
 
-    /* height: 100vh; */
-
     @media (max-width: 590px){
         background-size: cover;
     }

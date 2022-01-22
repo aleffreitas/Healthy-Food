@@ -5,8 +5,7 @@ export function Membership() {
 
     return (
         <>
-        <div  id="join"></div>
-        <Description>
+        <Description id="join">
             <Container>
                 <div className="description">
                     <h1>Join our membership to get special offer</h1>

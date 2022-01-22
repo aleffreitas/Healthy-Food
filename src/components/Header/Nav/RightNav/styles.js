@@ -110,16 +110,11 @@ export const Container = styled.form`
             text-align: center;
         }
 
-        
+        &::placeholder{
+            color: var(--purple);    
+        }
     }
 
-        &::placeholder{
-            color: var(--green);    
-        }
-        & + input {
-            margin-top: 1rem;
-        }
-    }
     button[type="submit"]{
         width: 80%;
         padding: 0 1.5rem;
@@ -134,6 +129,25 @@ export const Container = styled.form`
         transition: filter 0.2s;
         &:hover {
             filter: brightness(0.9);
+        }
+    }
+
+    @media (min-width: 2000px) {
+        h2{
+            font-size: 4rem;
+        }
+
+        input{
+            font-weight: 400;
+            font-size: 2rem;
+            padding: 3.5rem 1rem;
+        }
+
+        button[type="submit"]{
+            width: 80%;
+            padding: 0 1.5rem;
+            height: 6rem;
+            font-size: 2.5rem;
         }
     }
 

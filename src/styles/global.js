@@ -85,9 +85,12 @@ export const GlobalStyle = createGlobalStyle`
         position: relative;
         border-radius: 0.25rem;
 
+        @media (min-width: 2000px) {
+            max-width: 800px;
+        }
+
         @media (max-width: 530px) {
             width: 90%;
-            padding: 2rem;
         }
 
         @media (max-width: 372px) {
@@ -104,6 +107,12 @@ export const GlobalStyle = createGlobalStyle`
         transition: filter 0.2s;
         &:hover {
             filter: brightness(0.8);
+        }
+
+        @media (min-width: 2000px) {
+            img{
+                width: 30px;
+            }
         }
     }
 
@@ -202,7 +211,11 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 768px) {
             display: none !important;
         }
-    }    
+    }
+    
+    .slick-prev{
+        display: none !important;
+    }
 
     [disabled] {
         opacity: 0.6;

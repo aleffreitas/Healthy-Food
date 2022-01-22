@@ -14,24 +14,34 @@ export const Description = styled.div`
         background-size: cover;
     }
     
-    @media (max-width: 980px){
+    @media (max-width: 979px){
         padding: 90px 0;
 
     }
     
-    @media (min-width: 1140px ) and (max-width: 1699px){
-        padding: 180px 0;
+    @media (min-width: 981px ) and (max-width: 1099px){
+        padding: 150px 0;
 
-    }    
+    } 
+
+    @media (min-width: 1100px ) and (max-width: 1250px){
+        padding: 200px 0;
+
+    } 
+    
+    @media (min-width: 1250px ) and (max-width: 1699px){
+        padding: 280px 0;
+
+    } 
 
     
     @media (min-width: 1700px){
-        padding: 210px 0;
+        padding: 350px 0;
 
     }
     
     @media (min-width: 2000px){
-        padding: 410px 0;
+        padding: 380px 0;
 
     }
 
@@ -48,7 +58,7 @@ export const Description = styled.div`
     
 `
 
-export const Container = styled.section`    
+export const Container = styled.section` 
     
     .description{
 
@@ -116,11 +126,13 @@ export const Container = styled.section`
             }
 
             h1{
-                font-size: 3.5rem;
+                font-size: 3.7rem;
                 line-height: 5rem;
             }
 
         }
+
+        
         
         @media (max-width: 980px){
             max-width: 290px; 
