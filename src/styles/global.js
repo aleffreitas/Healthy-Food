@@ -68,7 +68,6 @@ export const GlobalStyle = createGlobalStyle`
         bottom: 0;
         right: 0;
         left: 0;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -81,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 500px;
 
         background-color: var(--white);
-        padding: 3rem;
+        padding: 2rem;
         position: relative;
         border-radius: 0.25rem;
 
@@ -162,7 +161,6 @@ export const GlobalStyle = createGlobalStyle`
             right: 0;
             width: 7%;
             margin-right: -2px;
-
             transition: .3s;
         }
             

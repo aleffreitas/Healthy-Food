@@ -98,47 +98,65 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
             </button>
             <Container className='form' onSubmit={handleSubmit}>
                 <h2>Register</h2>
-                <input id='name'
-                    type='text'
-                    placeholder='Enter your name'
-                    pattern='[a-zA-Z ]+$'
-                    title='Must contain letters only.'
-                    required={true}
-                />
-                <input
-                    id='birthday'
-                    type='date'
-                    placeholder='Choose your birthday'
-                    title='Choose your birthday.'
-                    required={true}
-                />
-                <input
-                    id='CPF'
-                    type='text'
-                    placeholder='Enter your CPF'
-                    pattern='[0-9]{11}'
-                    title='Must contain numbers only.'
-                    required={true}
-                />
-
-                <input
-                    id='CEP'
-                    type='text'
-                    placeholder='Enter your CEP'
-                    pattern='[0-9]{8}'
-                    title='Must contain numbers only.'
-                    required={true}
-                    onChange={(e) => setCEP(e.target.value)}
-                    onBlur={(e) => getAddress(cep)}
-                />
-                <input
-                    id='number'
-                    type='number'
-                    placeholder='Number'
-                    pattern='[0-9]+$'
-                    title='Must contain numbers only.'
-                    required={true}
-                />
+                <div className="primaryData">
+                    <div>
+                        <label> Name</label>
+                            <input id='name'
+                                type='text'
+                                placeholder='Enter your name'
+                                pattern='[a-zA-Z ]+$'
+                                title='Must contain letters only.'
+                                required={true}
+                            />
+                    </div>
+                </div>
+                <div className="otherDatas">
+                    <div>
+                        <label>Birthday</label>
+                            <input
+                                id='birthday'
+                                type='date'
+                                onfocus="(this.type='date')"
+                                title='Choose your birthday.'
+                                required={true}
+                            />
+                    </div>
+                        <div>
+                            <label>CPF</label>
+                            <input
+                                id='CPF'
+                                type='text'
+                                placeholder='000.000.000-00'
+                                pattern='[0-9]{11}'
+                                title='Must contain numbers only.'
+                                required={true}
+                            />
+                        </div>
+                        <div>
+                            <label>CEP</label>
+                            <input
+                                id='CEP'
+                                type='text'
+                                placeholder='00000-00'
+                                pattern='[0-9]{8}'
+                                title='Must contain numbers only.'
+                                required={true}
+                                onChange={(e) => setCEP(e.target.value)}
+                                onBlur={(e) => getAddress(cep)}
+                            />
+                        </div>
+                        <div>
+                            <label>Number</label>
+                            <input
+                                id='number'
+                                type='number'
+                                placeholder='00'
+                                pattern='[0-9]+$'
+                                title='Must contain numbers only.'
+                                required={true}
+                            />
+                        </div>
+                </div>
                 <input
                     id='address'
                     type='text'
@@ -147,39 +165,41 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                     required={true}
                     onChange={(e) => setAddress(e.target.value)}
                 />
-                <input
-                    id='complement'
-                    type='text'
-                    placeholder='Complement'
-                    value={complement}
-                    onChange={(e) => setComplement(e.target.value)}
-                />
-                <input
-                    id='district'
-                    type='text'
-                    placeholder='Enter your district'
-                    required={true}
-                    value={district}
-                    onChange={(e) => setDistrict(e.target.value)}
-                />
-                <input
-                    id='city'
-                    type='text'
-                    placeholder='Enter your city'
-                    required={true}
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                />
-                <input
-                    id='UF'
-                    type='text'
-                    placeholder='UF'
-                    pattern='[A-Za-z]{2}'
-                    title='Must contain at least two letters.'
-                    required={true}
-                    value={uf}
-                    onChange={(e) => setUF(e.target.value)}
-                />
+                <div className="otherDatas">
+                    <input
+                        id='complement'
+                        type='text'
+                        placeholder='Complement'
+                        value={complement}
+                        onChange={(e) => setComplement(e.target.value)}
+                    />
+                    <input
+                        id='district'
+                        type='text'
+                        placeholder='Enter your district'
+                        required={true}
+                        value={district}
+                        onChange={(e) => setDistrict(e.target.value)}
+                    />
+                    <input
+                        id='city'
+                        type='text'
+                        placeholder='Enter your city'
+                        required={true}
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    />
+                    <input
+                        id='UF'
+                        type='text'
+                        placeholder='UF'
+                        pattern='[A-Za-z]{2}'
+                        title='Must contain at least two letters.'
+                        required={true}
+                        value={uf}
+                        onChange={(e) => setUF(e.target.value)}
+                    />
+                </div>
 
                 <button type='submit'>Register</button>
             </Container>

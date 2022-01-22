@@ -8,12 +8,31 @@ export const Container = styled.form`
         margin-bottom: 1rem;
     }
 
-    input{
+    .primaryData{
+        text-align: left;
+
+        label{
+            margin-left: 0.5rem;
+        }
+    }
+
+    .otherDatas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem;
+        text-align: left;
+        margin: 0.5rem 0;
         
-        margin: 0.2rem 0.1rem;
-        width: 99%;
-        padding: 0 1.5rem;
-        height: 4rem;
+        label{            
+            margin-left: 0.5rem;
+        }
+    }
+
+    input{
+        margin-top: 0.2rem;
+        width: 100%;
+        padding: 0 1rem;
+        height: 3.5rem;
         border-radius: 0.25rem;
 
         border: 1px solid #d7d7d7;
@@ -22,42 +41,12 @@ export const Container = styled.form`
         font-weight: 400;
         font-size: 1rem;
 
-
-        &[id='birthday'] {
-            width: 49%;
-        }
-
-        &[id='CPF']{
-            width: 49%;
-        }
-
-        &[id='CEP'] {
-            width: 49%;
-        }
-
-        &[id='number'] {
-            width: 49%;
-        }
-
-        &[id='complement'] {
-            width: 49%;
-        }
-
-        &[id='district'] {
-            width: 49%;
-        }
-
-        &[id='city'] {
-            width: 49%;
-        }
-
-        &[id='UF'] {
-            width: 49%;
-            text-align: center;
-        }
-
         &::placeholder{
             color: var(--purple);    
+        }
+
+        &[id="UF"]{
+            text-align: center;
         }
     }
 
@@ -97,60 +86,24 @@ export const Container = styled.form`
         }
     }
 
-
     @media (max-width: 530px){
         h2{
-        font-size: 2rem;
+            font-size: 2rem;
         }
 
         input{
-        padding: 0 1rem;
-        height: 3rem;        
-        }
-    }
-
-    @media (max-width: 341px){
-        input {            
-            width: 95%; 
-            
-            &[id='birthday'] {
-                width: 47%;
-            }
-
-            &[id='CPF']{
-                width: 47%;
-            }
-
-            &[id='CEP'] {
-                width: 47%;
-            }
-
-            &[id='number'] {
-                width: 47%;
-            }
-
-            &[id='complement'] {
-                width: 47%;
-            }
-
-            &[id='district'] {
-                width: 47%;
-            }
-
-            &[id='city'] {
-                width: 47%;
-            }
-
-            &[id='UF'] {
-                width: 47%;
-                text-align: center;
-            }
+            padding: 0 1rem;
+            height: 3rem;        
         }
     }
 
     @media (max-width: 328px){
         input{
             font-size: 0.78rem;
+        }
+
+        label{
+            font-size: 0.9rem;
         }
     }
 
