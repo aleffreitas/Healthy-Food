@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^0.25.0",
     "cookie": "^0.4.1",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-grid-carousel": "^1.0.1",
@@ -18,8 +19,10 @@
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.4",
     "react-slick": "^0.28.1",
+    "remask": "^0.1.0-alpha.5",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
+    "vanilla-masker": "^1.2.0",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

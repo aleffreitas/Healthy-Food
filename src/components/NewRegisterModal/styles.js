@@ -8,6 +8,13 @@ export const Container = styled.form`
         margin-bottom: 1rem;
     }
 
+    .formField__error {
+        color: #d93025;
+        font-size: 0.9rem;
+        position: absolute;
+        margin: 0 0 0 1rem;
+    }
+
     .primaryData{
         text-align: left;
 

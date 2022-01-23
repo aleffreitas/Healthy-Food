@@ -4,6 +4,7 @@ import { useState } from "react";
 import Modal from 'react-modal';
 import api from 'services/api';
 import closeImg from 'assets/close.svg';
+import { mask } from 'remask';
 
 
 Modal.setAppElement('#root');
@@ -11,12 +12,24 @@ Modal.setAppElement('#root');
 
 export function NewRegisterModal({ isOpen, onRequestClose }) {
 
+    const [cpf, setCpf] = useState("");
+
+    function handleChangeCpf(event) {
+        setCpf(mask(event.target.value, '999.999.999-99'));
+    }
+
+    function handleChangeCep(event) {
+        setCEP(mask(event.target.value, '99999-999'));
+    }   
+
     const [cep, setCEP] = useState('');
     const [address, setAddress] = useState('');
     const [complement, setComplement] = useState('');
     const [district, setDistrict] = useState('');
     const [city, setCity] = useState('');
     const [uf, setUF] = useState('');
+
+    
 
     async function getAddress(cep) {
         try {
@@ -100,7 +113,8 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                 <div className="primaryData">
                     <div>
                         <label> Name</label>
-                            <input id='name'
+                            <input
+                                id='name'
                                 type='text'
                                 placeholder='Enter your name'
                                 pattern='[a-zA-Z ]+$'
@@ -115,7 +129,6 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                             <input
                                 id='birthday'
                                 type='date'
-                                onfocus="(this.type='date')"
                                 title='Choose your birthday.'
                                 required={true}
                             />
@@ -126,9 +139,10 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                                 id='CPF'
                                 type='text'
                                 placeholder='000.000.000-00'
-                                pattern='[0-9]{11}'
                                 title='Must contain numbers only.'
-                                required={true}
+                                required={true}                                
+                                value={cpf}
+                                onChange={handleChangeCpf}
                             />
                         </div>
                         <div>
@@ -136,12 +150,13 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                             <input
                                 id='CEP'
                                 type='text'
-                                placeholder='00000-00'
-                                pattern='[0-9]{8}'
+                                placeholder='00000-000'
                                 title='Must contain numbers only.'
                                 required={true}
-                                onChange={(e) => setCEP(e.target.value)}
                                 onBlur={(e) => getAddress(cep)}
+                                value={cep}
+                                onChange={handleChangeCep}
+
                             />
                         </div>
                         <div>
