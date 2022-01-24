@@ -1,23 +1,37 @@
 # Teste Técnico Healthy food 
 
-## Tecnologias utilizadas no desafio:
+## Tecnologias utilizadas:
 <p align="center">
   <img alt="ReactJS" src="https://img.shields.io/badge/ReactJS-61dafb?style=for-the-badge&logo=react&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=white">
-  <img alt="StyledComponents" src="https://img.shields.io/badge/StyledComponents-424242?style=for-the-badge&logo=styledcomponents&logoColor=pink">
-  
+  <img alt="StyledComponents" src="https://img.shields.io/badge/StyledComponents-424242?style=for-the-badge&logo=styledcomponents&logoColor=pink">  
 </p>
+
+## 🔗 Api consumida com Axios
+
+[Via CEP](https://viacep.com.br/)
 
 <br>
 
 *******
-## Tabela de conteúdo 
+## Tabela de conteúdo
+
+ 1. [Requisitos](#requirements)
  1. [Instalação](#installation)
  2. [Demonstração](#demonstration)
 
 *******
 
+<div class="requirements">
+
+# **Requisitos**:
+* Você instalou a versão mais recente de `<Yarn>`.
+* Você adicionou a biblioteca `<Axios>`.
+
+</div>
+
 <div id="installation">
+
 
 # **Instalação**:
 
@@ -49,10 +63,10 @@ A aplicação roda em **http://localhost:3000/Healthy-Food**.
 
 ## **Mostrando a aplicação funcionando**
 </div>
-<p>Desktop</p>
+<h2 align="center">Desktop</h2>
 <img src="./github/healthyfooddesktop.gif"/>
 
-<p>Mobile</p>
+<h2 align="center">Mobile</h2>
 <img src="./github/healthyfoodmobile.gif"/>
 
 <h5>Deploy feito na Branch gh-pages</h5>
