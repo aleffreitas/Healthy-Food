@@ -1,4 +1,8 @@
+<div align="center">
+
 # Teste Técnico Healthy food 
+
+</div>
 
 ## Tecnologias utilizadas:
 <p align="center">
@@ -23,7 +27,7 @@
 <div class="requirements">
 
 # **Requisitos**:
-* Você instalou a versão mais recente de `<Yarn>`.
+* Você instalou a versão mais recente do `<Yarn>`.
 * Você adicionou a biblioteca `<Axios>`.
 
 </div>
@@ -69,7 +73,7 @@ A aplicação roda em **http://localhost:3000/Healthy-Food**.
 
 <h5>Deploy feito na Branch gh-pages</h5>
 
-<h3 align="left">Que tal você testar esse Projeto?</h3>
+## Que tal você testar esse Projeto?
 
 - [Clique Aqui para Testar!](https://aleffreitas.github.io/Healthy-Food/)
 
