@@ -11,8 +11,6 @@
 
 [Via CEP](https://viacep.com.br/)
 
-<br>
-
 *******
 ## Tabela de conteúdo
 
