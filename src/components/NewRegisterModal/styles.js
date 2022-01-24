@@ -2,17 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.form` 
     text-align: center;
-    
+
     h2{
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    .formField__error {
-        color: #d93025;
-        font-size: 0.9rem;
-        position: absolute;
-        margin: 0 0 0 1rem;
     }
 
     .primaryData{
@@ -66,7 +59,7 @@ export const Container = styled.form`
         border-radius: 0.25rem;
         border: 0;
         font-size: 1.2rem;
-        margin-top: 1.5rem;
+        margin: 0.5rem 0;
         font-weight: 600;
         transition: filter 0.2s;
         &:hover {

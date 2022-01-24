@@ -33,7 +33,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
 
     async function getAddress(cep) {
         try {
-            const response = await api.get(`https://viacep.com.br/ws/${cep}/json/`);
+            const response = await api.get(`${cep}/json/`);
             setAddress(response.data.logradouro);
             setComplement(response.data.complemento);
             setDistrict(response.data.bairro);
@@ -112,7 +112,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                 <h2>Register</h2>
                 <div className="primaryData">
                     <div>
-                        <label> Name</label>
+                        <label>Name</label>
                             <input
                                 id='name'
                                 type='text'
@@ -153,7 +153,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                                 placeholder='00000-000'
                                 title='Must contain numbers only.'
                                 required={true}
-                                onBlur={(e) => getAddress(cep)}
+                                onBlur={() => getAddress(cep)}
                                 value={cep}
                                 onChange={handleChangeCep}
 
@@ -177,7 +177,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                     placeholder='Enter your address'
                     value={address}
                     required={true}
-                    onChange={(e) => setAddress(e.target.value)}
+                    onChange={(event) => setAddress(event.target.value)}
                 />
                 <div className="otherDatas">
                     <input
@@ -185,7 +185,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                         type='text'
                         placeholder='Complement'
                         value={complement}
-                        onChange={(e) => setComplement(e.target.value)}
+                        onChange={(event) => setComplement(event.target.value)}
                     />
                     <input
                         id='district'
@@ -193,7 +193,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                         placeholder='Enter your district'
                         required={true}
                         value={district}
-                        onChange={(e) => setDistrict(e.target.value)}
+                        onChange={(event) => setDistrict(event.target.value)}
                     />
                     <input
                         id='city'
@@ -201,7 +201,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                         placeholder='Enter your city'
                         required={true}
                         value={city}
-                        onChange={(e) => setCity(e.target.value)}
+                        onChange={(event) => setCity(event.target.value)}
                     />
                     <input
                         id='UF'
@@ -211,7 +211,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
                         title='Must contain at least two letters.'
                         required={true}
                         value={uf}
-                        onChange={(e) => setUF(e.target.value)}
+                        onChange={(event) => setUF(event.target.value)}
                     />
                 </div>
 

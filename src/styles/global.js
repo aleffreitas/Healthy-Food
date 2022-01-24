@@ -80,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 500px;
 
         background-color: var(--white);
-        padding: 2rem;
+        padding: 1rem 2rem;
         position: relative;
         border-radius: 0.25rem;
 
