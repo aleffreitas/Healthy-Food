@@ -31,21 +31,21 @@ export const Container = styled.div`
 
     @media (min-width: 1440px){
         p{
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
         
         li{
-            font-size: 1.3rem;
+            font-size: 1rem;
         }        
     }
 
     @media (min-width: 2000px){
         p{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         
         li{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }        
     }
 

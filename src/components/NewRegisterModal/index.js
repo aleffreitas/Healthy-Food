@@ -12,7 +12,15 @@ Modal.setAppElement('#root');
 
 export function NewRegisterModal({ isOpen, onRequestClose }) {
 
-    const [cpf, setCpf] = useState("");
+    const
+        [cpf, setCpf] = useState(""),
+        [cep, setCEP] = useState(''),
+        [address, setAddress] = useState(''),
+        [complement, setComplement] = useState(''),
+        [district, setDistrict] = useState(''),
+        [city, setCity] = useState(''),
+        [uf, setUF] = useState('')
+    ;
 
     function handleChangeCpf(event) {
         setCpf(mask(event.target.value, '999.999.999-99'));
@@ -20,16 +28,7 @@ export function NewRegisterModal({ isOpen, onRequestClose }) {
 
     function handleChangeCep(event) {
         setCEP(mask(event.target.value, '99999-999'));
-    }   
-
-    const [cep, setCEP] = useState('');
-    const [address, setAddress] = useState('');
-    const [complement, setComplement] = useState('');
-    const [district, setDistrict] = useState('');
-    const [city, setCity] = useState('');
-    const [uf, setUF] = useState('');
-
-    
+    }    
 
     async function getAddress(cep) {
         try {

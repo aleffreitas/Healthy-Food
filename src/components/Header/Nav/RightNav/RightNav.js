@@ -1,13 +1,24 @@
 import { Ul } from "./styles";
 import { Link } from 'react-scroll';
+import { navMenu } from 'services/menu';
 
 export function RightNav({ open, setOpen, openNewModal}) {
 
     return (
         <Ul open={open}>
-            <Link open={open} onClick={() => setOpen(!open)} to="healthyRecipes" spy={true} smooth={true}> <li>HEALTHY RECIPES</li> </Link>
-            <Link open={open} onClick={() => setOpen(!open)} to="blog" spy={true} smooth={true}><li>BLOG</li> </Link>
-            <Link open={open} onClick={() => setOpen(!open)} to="join" spy={true} smooth={true}><li>JOIN</li></Link>
+            {navMenu.map((item) => {
+                return (            
+                    <Link
+                        key={item.id}
+                        open={open}
+                        onClick={() => setOpen(!open)}
+                        to={item.to} spy={true}
+                        smooth={true}>
+                        <li>{item.text}</li>
+                    </Link>
+                )
+            })}
+
             <li>
                 <button type="button" onClick={openNewModal}>
                     REGISTER
